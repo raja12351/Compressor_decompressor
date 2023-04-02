@@ -25,7 +25,7 @@ public class compress {
         while((len=fis.read(buffer))!=-1){
             gzip.write(buffer,0,len);
         }
-//         closing all output streams
+//         Closing all streams and releasing any system resources associated with the streams
         gzip.close();
         fis.close();
         fos.close();
